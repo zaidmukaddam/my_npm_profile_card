@@ -6,7 +6,6 @@
     "scripts": {
         "start": "node index.js"
     },
-    "type": "module",
     "engines": {
         "node": ">=10",
         "npm": ">=6.0.0"

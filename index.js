@@ -1,33 +1,36 @@
-import boxen from "boxen";
-import chalk from "chalk";
-import inquirer from "inquirer";
-import clear from "clear";
-import open from "open";
+#!/usr/bin/env node
 
-const { bold, green, gray, cyan, red, white, blue, italic, cyanBright } = chalk;
-const { createPromptModule } = inquirer;
+"use strict";
+
+const boxen = require("boxen");
+const chalk = require("chalk");
+const inquirer = require("inquirer");
+const clear = require("clear");
+const open = require("open");
+
 clear();
 
-var prompt = createPromptModule();
+var prompt = inquirer.createPromptModule();
+
 
 const data = {
-    name: bold.blue("Zaid Altaf Mukaddam"),
-    nickname: bold("Zaid"),
+    name: chalk.bold.blue("Zaid Altaf Mukaddam"),
+    nickname: chalk.bold("Zaid"),
 
-    web: green("https://zaidmukaddam.github.io         "),
-    blog: green("https://blog.realzaidmukaddam.tech     "),
-    twitter: gray("https://twitter.com/") + cyan("zaidmukaddam   "),
-    npm: gray("https://npmjs.com/") + red("~zaidmukaddam          "),
-    github: gray("https://github.com/") + white("zaidmukaddam     "),
-    npx: red("npx") + " " + white("zaidmukaddam"),
+    web: chalk.green("https://zaidmukaddam.github.io         "),
+    blog: chalk.green("https://blog.realzaidmukaddam.tech     "),
+    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("zaidmukaddam   "),
+    npm: chalk.gray("https://npmjs.com/") + chalk.red("~zaidmukaddam          "),
+    github: chalk.gray("https://github.com/") + chalk.white("zaidmukaddam     "),
+    npx: chalk.red("npx") + " " + chalk.white("zaidmukaddam"),
 
-    labelWeb: white.bold("Web:"),
-    labelBlog: white.bold(" Blog:"),
-    labelTwitter: white.bold("Twitter:"),
-    labelNpm: white.bold("  npm:"),
-    labelGitHub: white.bold("GitHub:"),
-    labelLinkedIn: white.bold("  LinkedIn:"),
-    labelCard: white.bold("Card:"),
+    labelWeb: chalk.white.bold("Web:"),
+    labelBlog: chalk.white.bold(" Blog:"),
+    labelTwitter: chalk.white.bold("Twitter:"),
+    labelNpm: chalk.white.bold("  npm:"),
+    labelGitHub: chalk.white.bold("GitHub:"),
+    labelLinkedIn: chalk.white.bold("  LinkedIn:"),
+    labelCard: chalk.white.bold("Card:"),
 };
 
 const box = boxen(
