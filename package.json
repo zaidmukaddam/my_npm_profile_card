@@ -1,35 +1,42 @@
 {
-    "name": "zaidmukaddam",
-    "version": "1.0.0",
-    "description": "A personal npm card for Zaid Altaf Mukaddam (@zaidmukaddam)",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "engines": {
-        "node": ">=10",
-        "npm": ">=6.0.0"
-    },
-    "bin": {
-        "zaidmukaddam": "index.js"
-    },
-    "keywords": [
-        "npm",
-        "npx",
-        "node",
-        "javascript",
-        "npx card"
-    ],
-    "license": "ISC",
-    "dependencies": {
-        "boxen": "^6.0.0",
-        "chalk": "^4.1.1",
-        "clear": "^0.1.0",
-        "inquirer": "^8.1.2",
-        "open": "^8.2.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/zaidmukaddam/my_npm_profile_card.git"
-    }
+  "name": "@zaidmukaddam/zaid",
+  "version": "0.0.2",
+  "description": "A personal npm card for Zaid Altaf Mukaddam (@zaidmukaddam)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6.0.0"
+  },
+  "type": "module",
+  "bin": {
+    "zaidmukaddam": "index.js"
+  },
+  "keywords": [
+    "npm",
+    "npx",
+    "node",
+    "javascript",
+    "npx card"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^6.0.0",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0",
+    "inquirer": "^8.1.2",
+    "open": "^8.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaidmukaddam/my_npm_profile_card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaidmukaddam/my_npm_profile_card/issues"
+  },
+  "homepage": "https://github.com/zaidmukaddam/my_npm_profile_card#readme",
+  "devDependencies": {},
+  "author": "Zaid Mukaddam <zaidlunatic1@gmail.com>"
 }
