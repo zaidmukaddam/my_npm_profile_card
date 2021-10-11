@@ -1,6 +1,6 @@
 {
-  "name": "@zaidmukaddam/zaid",
-  "version": "0.0.2",
+  "name": "zaidmukaddam",
+  "version": "1.0.0",
   "description": "A personal npm card for Zaid Altaf Mukaddam (@zaidmukaddam)",
   "main": "index.js",
   "scripts": {

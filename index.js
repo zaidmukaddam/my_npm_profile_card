@@ -8,7 +8,7 @@ import inquirer from "inquirer";
 import clear from "clear";
 import open from "open";
 
-const { bold, green, gray, cyan, red, white, italic, cyanBright } = chalk;
+const { bold, green, gray, cyan, red, white, italic, cyanBright, blue } = chalk;
 const { createPromptModule } = inquirer;
 
 clear();
@@ -20,32 +20,34 @@ const data = {
     name: bold.blue("Zaid Altaf Mukaddam"),
     nickname: bold("Zaid"),
 
-    web: green("https://zaidmukaddam.github.io         "),
-    blog: green("https://blog.realzaidmukaddam.tech     "),
-    twitter: gray("https://twitter.com/") + cyan("zaidmukaddam   "),
-    npm: gray("https://npmjs.com/") + red("~zaidmukaddam          "),
-    github: gray("https://github.com/") + white("zaidmukaddam     "),
-    npx: red("npx") + " " + white("@zaidmukaddam/zaid"),
+    web: green("https://zaidmukaddam.github.io"),
+    twitter: cyanBright("https://twitter.com/") + gray("zaidmukaddam"),
+    npm: cyanBright("https://npmjs.com/") + red("~zaidmukaddam"),
+    github: cyanBright("https://github.com/") + white("zaidmukaddam"),
+    instagram: cyan("https://instagram.com/") + blue("zaidmukaddam.c"),
+    linkedin: cyanBright("https://linkedin.com/in/") + green("zaid-mukaddam-26b155202"),
+    npx: red("npx") + " " + white("zaidmukaddam"),
 
-    labelWeb: white.bold("Web:"),
-    labelBlog: white.bold(" Blog:"),
+    labelWeb: white.bold(" Web:"),
+    labelInstagram: white.bold("Instagram:"),
     labelTwitter: white.bold("Twitter:"),
     labelNpm: white.bold("  npm:"),
     labelGitHub: white.bold("GitHub:"),
-    labelLinkedIn: white.bold("  LinkedIn:"),
+    labelLinkedIn: white.bold("LinkedIn:"),
     labelCard: white.bold("Card:"),
 };
 
 const box = boxen(
     [
-        `${data.name} | ${data.nickname}🚀`,
+        `${cyan('{{')} ${data.name} | ${data.nickname} ${cyan('}}')}`,
         ``,
 
         `${data.labelWeb}  ${data.web}`,
-        `${data.labelBlog}  ${data.blog}`,
+        `${data.labelInstagram} ${data.instagram}`,
         `${data.labelTwitter}  ${data.twitter}`,
         `${data.labelNpm}  ${data.npm}`,
         `${data.labelGitHub}  ${data.github}`,
+        `${data.labelLinkedIn}\n${data.linkedin}`,
         ``,
         `${data.npx}`,
         ``,
@@ -54,7 +56,7 @@ const box = boxen(
         `${italic("So far and for this, I am very grateful.")}`,
     ].join("\n"),
     {
-        borderColor: "blue",
+        borderColor: "redBright",
         borderStyle: "double",
         padding: 1,
         margin: 1,
